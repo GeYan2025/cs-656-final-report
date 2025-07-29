@@ -127,7 +127,7 @@ echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-### Step 5: Clone and Build AdguardTeam/DNSProxy（Pull PR 268）
+### Step 5: Clone and Build AdguardTeam/DNSProxy (Pull PR 268)
 
 ```bash
 git clone https://github.com/AdguardTeam/dnsproxy.git
@@ -139,7 +139,7 @@ sudo mv dnsproxy /usr/local/bin/dnsproxy
 sudo chmod +x /usr/local/bin/dnsproxy
 ```
 
-### Step 6: Install Dig Command to Verify DNSPerf
+### Step 6: Install Dig Command to Verify DNSProxy
 
 • **Start DNSProxy in Current Session**
 
@@ -150,7 +150,7 @@ sudo sysctl -w net.core.wmem_max=7500000
 dnsproxy --listen=127.0.0.1 --port=53 --upstream="https://1.1.1.1/dns-query"
 ```
 
-• **Open New Session to Verify DNSPerf**
+• **Open New Session to Verify DNSProxy**
 
 ```bash
 dig @127.0.0.1 -p 53 google.com
