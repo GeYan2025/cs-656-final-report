@@ -63,7 +63,7 @@ sudo sysctl -w net.core.wmem_max=7500000
 
 • **Open Data Analysis Script**
 
-   Navigate to the following path and open the notebook file in **Jupyter Notebook**:
+   Navigate to the following path and open the notebook file in Jupyter Notebook:
 
    ```text
    2022-imc-dns-over-quic-web-performance-main/single.query.response.times.ipynb
@@ -71,7 +71,7 @@ sudo sysctl -w net.core.wmem_max=7500000
 
 • **Run the Notebook**
 
-   Execute the cells in the notebook to analyze the DNS query data.
+   Execute the cells in Jupyter Notebook to analyze the DNS query data.
    The analysis will generate visualizations and statistics based on the DNSPerf results.
 
 ---
@@ -194,7 +194,7 @@ python3 web_performance.py
 
 • **Open Data Analysis Script**
 
-   Navigate to the following path and open the notebook file in **Jupyter Notebook**:
+   Navigate to the following path and open the notebook file in Jupyter Notebook:
 
    ```text
    2022-imc-dns-over-quic-web-performance-main/web.performance.ipynb
@@ -202,7 +202,7 @@ python3 web_performance.py
 
 • **Run the Notebook**
 
-   Execute the cells in the notebook to analyze the web performance data.
+   Execute the cells in Jupyter Notebook to analyze the web performance data.
    The analysis will generate visualizations and statistics based on the web_performance.py results.
 
 ### Step 10: Restore System DNS Cache and Nameserver
