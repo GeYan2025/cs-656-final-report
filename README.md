@@ -63,7 +63,7 @@ sudo sysctl -w net.core.wmem_max=7500000
 
 • **Open Data Analysis Script**
 
-   Navigate to the following path and open the notebook file:
+   Navigate to the following path and open the notebook file in **Jupyter Notebook**:
 
    ```text
    2022-imc-dns-over-quic-web-performance-main/single.query.response.times.ipynb
@@ -194,7 +194,7 @@ python3 web_performance.py
 
 • **Open Data Analysis Script**
 
-   Navigate to the following path and open the notebook file:
+   Navigate to the following path and open the notebook file in **Jupyter Notebook**:
 
    ```text
    2022-imc-dns-over-quic-web-performance-main/web.performance.ipynb
