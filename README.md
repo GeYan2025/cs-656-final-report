@@ -93,16 +93,21 @@ pip3 install selenium
 
 ### Step 3: Install Chromium Browser and Driver
 
+• **Install Chromium Browser and Record Version Number**
+
 ```bash
 sudo apt install -y chromium-browser
 chromium-browser --version
 ```
+
+• **Install Driver Corresponding to Chromium Browser Version Number**
 
 ```bash
 wget https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.157/linux64/chromedriver-linux64.zip
 unzip chromedriver-linux64.zip
 sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
 sudo chmod +x /usr/local/bin/chromedriver
+# Check the driver version number and makesure the Chromium browser version number must be the same
 chromedriver --version
 ```
 
@@ -157,10 +162,7 @@ sudo systemctl disable systemd-resolved
 sudo nano /etc/resolv.conf
 # Comment original nameserver and add:
 nameserver 127.0.0.1
-# After experiment, remember to restore the system DNS cache and /etc/resolv.conf
-sudo systemctl enable systemd-resolved
-sudo systemctl start systemd-resolved
-systemctl status systemd-resolved
+# After the experiment, remember to restore the system DNS cache and the nameserver in /etc/resolv.conf
 ```
 
 ### Step 8. Run web_performance.py
@@ -195,7 +197,7 @@ python3 web_performance.py
    Execute the cells in the notebook to analyze the web performance data.
    The analysis will generate visualizations and statistics based on the web_performance.py results.
 
-### Step 10: Restore System DNS Cache and Original Nameserver
+### Step 10: Restore System DNS Cache and Nameserver
 
 ```bash
 sudo nano /etc/resolv.conf
