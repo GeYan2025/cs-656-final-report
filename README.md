@@ -49,6 +49,7 @@ sudo sysctl -w net.core.wmem_max=7500000
 ### Step 6: Run Data Analysis
 
 • **Copy DNSPerf Measurement Results**
+
    After completing Step 5, locate the `dnsperf_results.csv.gz` file.  
    Copy this file to the following directory (Windows example):
 
@@ -57,9 +58,11 @@ sudo sysctl -w net.core.wmem_max=7500000
    ```
 
 • **Launch Jupyter Notebook**
+
    Open **Anaconda Navigator** and launch **Jupyter Notebook**.
 
 • **Open Data Analysis Script**
+
    Navigate to the following path and open the notebook file:
 
    ```text
@@ -67,6 +70,7 @@ sudo sysctl -w net.core.wmem_max=7500000
    ```
 
 • **Run the Notebook**
+
    Execute the cells in the notebook to analyze the DNS query data.
    The analysis will generate visualizations and statistics based on the DNSPerf results.
 
@@ -176,6 +180,7 @@ python3 web_performance.py
 ### Step 9: Run Data Analysis
 
 • **Copy Web Performance Results**
+
    After completing Step 8, locate the `web.performance.parquet.gzip` file.  
    Copy this file to the following directory (Windows example):
 
@@ -184,9 +189,11 @@ python3 web_performance.py
    ```
 
 • **Launch Jupyter Notebook**
+
    Open **Anaconda Navigator** and launch **Jupyter Notebook**.
 
 • **Open Data Analysis Script**
+
    Navigate to the following path and open the notebook file:
 
    ```text
@@ -194,6 +201,7 @@ python3 web_performance.py
    ```
 
 • **Run the Notebook**
+
    Execute the cells in the notebook to analyze the web performance data.
    The analysis will generate visualizations and statistics based on the web_performance.py results.
 
